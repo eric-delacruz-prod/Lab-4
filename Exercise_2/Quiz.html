@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 3</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="scripts/main.js"></script>
+  </head>
+  <body> 
+
+  <h1>Quiz</h1>
+
+  <form action="php/Quiz.php" method="post" id="fit">
+
+  Question 1: Which state is above Kansas?<br>
+
+    <input type="radio" name="q1" value = "Oklahoma"> 
+    Oklahoma <br>
+    <input type="radio" name="q1" value = "Colorado"> 
+    Colorado <br>
+    <input type="radio" name="q1" value = "Texas"> 
+    Texas <br>
+    <input type="radio" name="q1" value = "Nebraska"> 
+    Nebraska <br>
+
+  Question 2: What is the capital of Kansas?<br>
+
+    <input type="radio" name="q2" value = "Lawrence"> 
+    Lawrence <br>
+    <input type="radio" name="q2" value = "Kansas City"> 
+    Kansas City <br>
+    <input type="radio" name="q2" value = "Topeka"> 
+    Topeka <br>
+    <input type="radio" name="q2" value = "Witchita"> 
+    Witchita <br>
+
+  Question 3: Which University is located in Lawrence, Kansas?<br>
+
+    <input type="radio" name="q3" value = "Kansas State University"> 
+    Kansas State University <br>
+    <input type="radio" name="q3" value = "Friends University"> 
+    Friends University <br>
+    <input type="radio" name="q3" value = "University of Kansas"> 
+    University of Kansas <br>
+    <input type="radio" name="q3" value = "Washburn University"> 
+    Washburn University <br>
+
+  Question 4: What is the Kansas state bird?<br>
+
+    <input type="radio" name="q4" value = "Western Meadowlark"> 
+    Western Meadowlark <br>
+    <input type="radio" name="q4" value = "Western Kingbird"> 
+    Western Kingbird <br>
+    <input type="radio" name="q4" value = "Brewer's Blackbird"> 
+    Brewer's Blackbird <br>
+    <input type="radio" name="q4" value = "Yellow-Headed Blackbird"> 
+    Yellow-Headed Blackbird <br>
+
+  Question 5: What class is this quiz for?<br>
+
+    <input type="radio" name="q5" value = "EECS 368"> 
+    EECS 368 <br>
+    <input type="radio" name="q5" value = "MATH 127"> 
+    MATH 127 <br>
+    <input type="radio" name="q5" value = "EECS 448"> 
+    EECS 448 <br>
+    <input type="radio" name="q5" value = "EECS 210"> 
+    EECS 210 <br><br>
+
+  <input type="submit">
+
+  </form>
+
+  <?php include "php/main.php";?>
+  <script src="scripts/main.js"></script>
+  </body>
+</html>

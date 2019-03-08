@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset = "UTF-8">
+    <meta name= "viewport" content ="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lab 3</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body> 
+
+  <h1>S O V R N</h1>
+
+
+<form action='php/customerBackend.php' id="myForm" method="post">
+
+<div id="items">
+
+  <div class="product">
+      <img src="images/board1.jpg">
+      <p>$55.00</p>
+    <div class="container">
+      Qty:
+      <input type="number" class="quanbox" name="b1qty" id="b1qty">
+    </div>
+  </div>
+
+  <div class="product">
+      <img src="images/board2.jpg">
+      <p>$58.00</p>
+    <div class="container">
+    Qty:
+      <input type="number" class="quanbox" name="b2qty" id="b2qty">
+    </div>
+  </div>
+
+  <div class="product">
+      <img src="images/board3.jpg">
+      <p>$56.00</p>
+    <div class="container">
+    Qty:
+      <input type="number" class="quanbox" name="b3qty" id="b3qty">
+    </div>
+  </div>
+
+</div>
+
+  <p> Shipping </p>
+
+<div class="shipment">
+
+  <input type="radio" name="ship" id="free" value = "Free"> 
+  Free 7 Day <br>
+
+  <input type="radio" name="ship" id="fifty" value = "Express"> 
+  $50.00 Overnight <br>
+
+  <input type="radio" name="ship" id="five" value = "Standard"> 
+  $5.00 3 Day <br>
+
+</div>
+
+<br>
+  Username: <br><br>
+  <input type="text" name="user" id="user">
+  <br>
+  <br>
+  
+  Password: <br><br>
+  <input type="text" name="pass" id="pass">
+
+  <br>
+  <br>
+  
+<input type="reset">
+<br>
+<br>
+<button type="submit" onclick = "check()">Submit</button>
+
+</form>
+  <br>
+  
+
+  <script src="scripts/formChecker.js"></script>
+  </body>
+</html>
