@@ -1,29 +1,14 @@
 <?php
+    echo "<table style=\"background-color: rgb(107, 235, 207);\" border=\"1\">";
+    for($i = 1 ; $i < 101 ; $i++) 
+    {
+        echo "<tr>";
 
-$cols = 100;
-$rows = 100;
-
-echo "<table border=\"1\">";
-
-for ($i =1; $i < $rows; $i++){
-
-    echo'<tr>';
-
-    for ($j = 1; $j < $cols; $j++){
-         $k=0;
-      if($i == 1 and $j == 1){
-         echo '<td>' .$k. '</td>';
-      
-      }
-      else{
-        echo '<td>' .$i*$j.'</td>';
-      }
-      
+        for($j=1 ; $j < 101 ; $j++)
+        {
+            echo '<th>' . $i*$j . '</th>';
+        }
+        echo "</tr>";
     }
-
-   echo '</tr>';
-
-}
-
-echo"</table>";
+    echo "</table>";
 ?>
